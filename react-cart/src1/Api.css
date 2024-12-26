@@ -1,0 +1,187 @@
+/* Box styling for each product */
+.box {
+    width: 400px;
+    height: 500px;
+    background: #024950;
+    color: #fff;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling for responsive display */
+.img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* Main container for flex layout */
+.mainbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* General page styling */
+.body {
+    background-color: #003135;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Heading alignment */
+.heading {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Reset paragraph margins */
+p {
+    margin: 10px 0;
+}
+
+/* Button styling */
+button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #005f6b;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #024950;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header link styling */
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: text-decoration 0.3s ease;
+}
+
+/* Main Cart Container */
+.cart {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #024950;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cart Heading */
+.cart h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Cart Items Container */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #02635e;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Item Image */
+.cart-item .img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Cart Item Details */
+.cart-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+    flex: 1;
+    text-align: center;
+}
+
+/* Cart Buttons */
+.cart-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons Styling */
+.cart-buttons button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cart-buttons button:hover {
+    background-color: #005f6b;
+}
+
+.cart-buttons button:active {
+    transform: scale(0.95);
+}
+
+.cart-buttons .delete-btn {
+    background-color: #e74c3c;
+}
+
+.cart-buttons .delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Total Price Section */
+.cart h3 {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
