@@ -42,7 +42,7 @@ const Product = ({ cart, setCart }) => {
             <div className="mainbox">
                 <div key={product.id} className="box">
                     <img src={product.image} alt={product.title} className="img" />
-                    <p>{product.description}</p>
+                    {/* <p>{product.description}</p> */}
                     <p>{product.category}</p>
                     <p>{product.title}</p>
                     <p>${product.price}</p>
