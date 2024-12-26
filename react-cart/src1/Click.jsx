@@ -3,10 +3,20 @@ import Api from "./Api";
 import Product from "./Product";
 import Cart from "./Cart";
 import Header from "./Header";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Click = () => {
     const [cart, setCart] = useState([]);
+    useEffect(() => {
+        const savedCart = localStorage.getItem('cart');
+        if (savedCart) {
+            setCart(JSON.parse(savedCart));
+        }
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }, [cart]);
 
     return (
         <BrowserRouter>
@@ -21,3 +31,4 @@ const Click = () => {
 };
 
 export default Click;
+
